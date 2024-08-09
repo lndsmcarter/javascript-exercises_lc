@@ -1,17 +1,18 @@
 const repeatString = function(string, num) {
+    let multiString = string;
 
     for (let i = 0; i < num; i++) {
-        if (i = 0) {
-            let multiString = string
+        if (i == 0) {
+            multiString = string;
         }
         else {
-            let multiString = multiString + string
-        }
+            multiString = multiString + string;
+        };
     }
-    return (multiString)
+    return (multiString);
 }
 
-repeatString("hey", 3)
+repeatString("hey", 3);
 
 // Do not edit below this line
 module.exports = repeatString;

@@ -2,11 +2,7 @@ const repeatString = function(string, num) {
     let multiString = string;
 
     for (let i = 0; i <= num; i++) {
-        if (num < 0) {
-            multiString = "ERROR";
-            break;
-        }
-        else if (i == 0) {
+        if (i == 0) {
             multiString = "";
         }
         else if (i == 1) {
@@ -17,8 +13,12 @@ const repeatString = function(string, num) {
         };
     }
     
-    
+    if (num < 0) {
+        return ("ERROR");
+    }
+    else {
     return (multiString);
+    }
 }
 
 repeatString("hey", 3);

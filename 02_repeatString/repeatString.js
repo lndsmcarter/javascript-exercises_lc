@@ -1,15 +1,15 @@
 const repeatString = function(string, num) {
-    let i = 0
-    let multiString = string
 
-    while (i < num) {
-        let multiString = string
-        multiString = (multiString + string);
-        i++;
+    for (let i = 0; i < num; i++) {
+        if (i = 0) {
+            let multiString = string
+        }
+        else {
+            let multiString = multiString + string
+        }
     }
-
-    return(multiString)
-};
+    return (multiString)
+}
 
 repeatString("hey", 3)
 
